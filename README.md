@@ -2,17 +2,17 @@ Polling Project
 Description
 
 This project is a simple polling application designed to collect and display user votes.
-Current Status
+# Current Status
 Due to technical constraints, real-time streaming of poll results is not currently implemented. Users can submit their votes, and results are updated upon page refresh.
-Features
+# Features
 Create and participate in polls
 Submit votes
 View poll results (updated after refresh)
-Future Improvements
+# Future Improvements
 Implement real-time streaming of poll results
 Add user authentication
 Improve UI/UX for better visualization
-How to Run
+#How to Run
 Clone the repository
 Install dependencies:
 pip install -r requirements.txt
