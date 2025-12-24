@@ -1,0 +1,29 @@
+<h2>Add New Polling Unit Results</h2>
+
+<form method="post">
+    <label>Polling Unit Name:</label><br>
+    <input type="text" name="polling_unit_name" required><br><br>
+
+    <label>Select LGA:</label><br>
+    <select name="lga_id" required>
+        {% for lga in lgas %}
+        <option value="{{ lga.lga_id }}">
+            {{ lga.lga_name }}
+        </option>
+        {% endfor %}
+    </select><br><br>
+
+    <label>APC Score:</label><br>
+    <input type="number" name="APC" required><br><br>
+
+    <label>PDP Score:</label><br>
+    <input type="number" name="PDP" required><br><br>
+
+    <label>LP Score:</label><br>
+    <input type="number" name="LP" required><br><br>
+
+    <button type="submit">Save Results</button>
+</form>
+
+<br>
+<a href="/">Back Home</a>
